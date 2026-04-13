@@ -8,6 +8,7 @@
 class PointOfSale:
   def __init__(self):
     self.checkout_total = 0 # This is an example varialbe, remove it or change it as you please.
+    Fruits = {"oranges": 50, "apples": 50, "bananas": 50, "avocado": 50}
     print("\nInitializing POS system...")
     
     
