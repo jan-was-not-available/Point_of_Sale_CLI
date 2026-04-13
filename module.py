@@ -1,4 +1,9 @@
+# In main file
+# import script1
+# print(script1.sum(1, 3))
+
 # You will need to add code in this module to make teh Point of Sale Application functional.
+
 
 class PointOfSale:
   def __init__(self):
