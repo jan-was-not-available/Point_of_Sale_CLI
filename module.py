@@ -7,7 +7,7 @@
 
 class PointOfSale:
   def __init__(self):
-    self.checkout_total = 0 # This is an example varialbe, remove it or change it as you please.
+    float(self.checkout_total) == 0 # This is an example varialbe, remove it or change it as you please.
     self.Cart = []
     self.Fruits = ["oranges", "apples", "banana", "avocado"]
     self.Vegetables = ["yuca", "carrots", "pumpkins", "spinach"]
@@ -35,6 +35,35 @@ class PointOfSale:
 
       elif choice == "2":
         print("What would you like to add?")
-        print("Fruits: ", self.Fruits, "Vegetables: ", self.Vegetables, "Drinks: ", self.Drinks, "Fast Food: ", self.FastFood)
+        print("Fruits: ", self.Fruits)
+        print("Vegetables: ", self.Vegetables)
+        print("Drinks: ", self.Drinks)
+        print("Fast Food: ", self.FastFood)
+        self.itemchoice == input("Type Items Here: ")
+        if self.itemchoice == ("oranges"):
+          float(self.checkout_total) == float(self.checkout_total) + float(1.50)
+        if self.itemchoice == ("apples"):
+          float(self.checkout_total) == float(self.checkout_total) + float(1.75)
+        if self.itemchoice == ("banana"):
+          float(self.checkout_total) == float(self.checkout_total) + float(1.25)
+        if self.itemchoice == ("avocado"):
+          float(self.checkout_total) == float(self.checkout_total) + float(2.50)
+        if self.itemchoice == ("yuca"):
+          float(self.checkout_total) == float(self.checkout_total) + float(2.20)
+        if self.itemchoice == ("carrots"):
+          float(self.checkout_total) == float(self.checkout_total) + float(0.50)
+        if self.itemchoice == ("pumpkins"):
+          float(self.checkout_total) == float(self.checkout_total) + float(3.50)
+        if self.itemchoice == ("spinach"):
+          float(self.checkout_total) == float(self.checkout_total) + float(0.75)
+        
+
+
+      elif choice == "3":
+        print("This is your checkout total: ")
+        print("\n=============================")
+        print("\n")
+        return self.checkout_total 
+      
 
       break
